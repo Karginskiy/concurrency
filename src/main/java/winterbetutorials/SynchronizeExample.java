@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
-import static concurrency.tutorials.ConcurrentUtils.stop;
+import static winterbetutorials.ConcurrentUtils.stop;
 
 public class SynchronizeExample {
 

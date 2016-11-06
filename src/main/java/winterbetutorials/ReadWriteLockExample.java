@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import static concurrency.tutorials.ConcurrentUtils.sleep;
+import static winterbetutorials.ConcurrentUtils.sleep;
 
 public class ReadWriteLockExample {
 
