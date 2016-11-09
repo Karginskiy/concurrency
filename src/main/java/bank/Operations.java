@@ -30,24 +30,7 @@ public class Operations {
     }
 
     private static void transfer(Account account1, Account account2, int amount) throws InsufficientFundsException {
-        if (account1.getLock().tryLock()) {
-            try {
-                if (account2.getLock().tryLock()) {
-                    try {
-                        account1.withdraw(amount);
-                        account2.deposit(amount);
-                    } finally {
-                        account2.getLock().unlock();
-                    }
-                }
-            } finally {
-                account1.getLock().unlock();
-            }
-        } else {
-            account1.incFailedTransferCount();
-            account2.incFailedTransferCount();
-            System.out.println("Error waiting lock");
-        }
+
 
     }
 
